@@ -49,3 +49,17 @@ CREATE TABLE `tbl_users_log` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+CREATE EVENT clear_user_token_every_hour
+ON SCHEDULE EVERY 1 HOUR
+STARTS CURRENT_TIMESTAMP
+ENDS CURRENT_TIMESTAMP + INTERVAL 12 MONTH
+ON COMPLETION PRESERVE
+DO
+   Update tbl_users SET user_token = Null
+   WHERE user_last_login_at < NOW() - INTERVAL 1 HOUR;
+
+SHOW PROCESSLIST;
+SET GLOBAL event_scheduler = ON;
+SHOW EVENTS FROM computer_api;
