@@ -1,0 +1,78 @@
+<div class="content p-4">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-uppercase">User</h3>
+		</div>
+	</div>
+	<div class="table table-bordered rounded table-light p-3">
+		<div class="row">
+			<div class="col-md-3 h5">Description</div>
+			<div class="col-md-2 h5">Method</div>
+			<div class="col-md-3 h5">Parameters</div>
+			<div class="col-md-4 h5">API</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Connection attempt</div>
+			<div class="col-md-2">GET</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/connect" target="_blank">$ROOT_URL$$ROOT_PATH$user/connect</a></div>
+		</div>	
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Register a new user</div>
+			<div class="col-md-2">POST</div>
+			<div class="col-md-3">{"eml":"user-email", "pwd":"user-password", "name":"user-name"}</div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/register" target="_blank">$ROOT_URL$$ROOT_PATH$user/register</a></div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Activate a user by activation code from email.</div>
+			<div class="col-md-2">GET</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/activate/vhbgroalh90akyyypt0ah3qjo5gpb0bx" target="_blank">$ROOT_URL$$ROOT_PATH$user/activate/{code}</a></div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Login to app</div>
+			<div class="col-md-2">POST</div>
+			<div class="col-md-3">{"eml":"user-email", "pwd":"user-password"}</div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/login" target="_blank">$ROOT_URL$$ROOT_PATH$user/login</a></div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Get user API Key. If not exist, generate a new key.</div>
+			<div class="col-md-2">POST</div>
+			<div class="col-md-3">{"eml":"user-email", "pwd":"user-password"}</div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/getapikey" target="_blank">$ROOT_URL$$ROOT_PATH$user/getapikey</a></div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Get access Token. If not exist, generate a new token.</div>
+			<div class="col-md-2">POST</div>
+			<div class="col-md-3">{"key":"user-api-key"}</div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/gettoken" target="_blank">$ROOT_URL$$ROOT_PATH$user/gettoken</a></div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Get user Profile.</div>
+			<div class="col-md-2">POST</div>
+			<div class="col-md-3">{"token":"user-token"}</div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/getprofile" target="_blank">$ROOT_URL$$ROOT_PATH$user/getprofile</a></div>
+		</div>		
+		<hr>
+		<div class="row">
+			<div class="col-md-3">View user by id. Pass 'all' as id for list of all users.</div>
+			<div class="col-md-2">POST</div>
+			<div class="col-md-3">{"key":"user-api-key"}</div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/view/all" target="_blank">$ROOT_URL$$ROOT_PATH$user/view/{id}</a></div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">Update user's name and location.</div>
+			<div class="col-md-2">POST</div>
+			<div class="col-md-3">{"key":"user-api-key", "user_name":"user-name", "user_location":"user-location"}</div>
+			<div class="col-md-4"><a href="$ROOT_URL$$ROOT_PATH$user/update" target="_blank">$ROOT_URL$$ROOT_PATH$user/update</a></div>
+		</div>		
+	</div>
+</div>

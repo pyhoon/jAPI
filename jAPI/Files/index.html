@@ -1,0 +1,70 @@
+<div class="d-flex">
+  <div class="content p-4">
+    <h3>$HOME_TITLE$</h3>
+    <div class="mt-3">
+      <h5>Models</h5>
+      <div>
+        <a href="$ROOT_URL$$ROOT_PATH$user" style="text-decoration: none"><span class='fa fa-user mr-1'></span> <strong>User</strong></a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$user/connect" style="text-decoration: none">Connect</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$user/register" style="text-decoration: none">Register</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$user/activate" style="text-decoration: none">Activate</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$user/login" style="text-decoration: none">Login</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$user/getapikey" style="text-decoration: none">GetApiKey</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$user/gettoken" style="text-decoration: none">GetToken</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$user/getprofile" style="text-decoration: none">GetProfile</a>
+        &nbsp; | &nbsp;         
+        <a href="$ROOT_URL$$ROOT_PATH$user/view/all" style="text-decoration: none">View</a>        
+      </div>
+      <div>
+        <a href="$ROOT_URL$$ROOT_PATH$password" style="text-decoration: none"><span class='fa fa-lock mr-1'></span> <strong>Password</strong></a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$password/change" style="text-decoration: none">Change</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$password/reset" style="text-decoration: none">Reset</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$password/confirmreset" style="text-decoration: none">ConfirmReset</a>
+      </div>
+      <div>
+        <a href="$ROOT_URL$$ROOT_PATH$test" style="text-decoration: none"><span class='fa fa-flask mr-1'></span> <strong>Test</strong></a> &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$test/connectdb" style="text-decoration: none">ConnectDB</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$test/sendemail" style="text-decoration: none">SendEmail</a>
+        &nbsp; | &nbsp; 
+        <a href="$ROOT_URL$$ROOT_PATH$test/readsettings" style="text-decoration: none">ReadSettings</a>
+      </div>      
+    </div>
+    <div class="mt-3">
+      <h5>Features</h5>
+      <ul>
+        <li>B4J</li>
+        <li>MySQL</li>
+        <li>JSON</li>
+        <li>SMTP Email</li>
+        <li>Bootstrap CSS</li>
+        <li>Font Awesome</li>
+        <li>Pretty URL</li>
+        <li>Documentation</li>
+      </ul>
+    </div>
+    <div class="small">Local time: <span id="datetime"></span>
+      <script type="text/javascript">
+        var datetime = document.getElementById('datetime');
+        var d = new Date();
+        var formatted = d.getFullYear() + '-' + 
+        ('0' + (d.getMonth()+1)).slice(-2) + '-' + 
+        ('0' + d.getDate()).slice(-2) + ' ' +
+        ('0' + d.getHours()).slice(-2) + ':' +
+        ('0' + d.getMinutes()).slice(-2) + ':' +
+        ('0' + d.getSeconds()).slice(-2);
+        datetime.innerHTML = formatted;
+      </script>
+    </div>
+  </div>
+</div>
