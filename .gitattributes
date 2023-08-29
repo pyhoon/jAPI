@@ -1,5 +1,5 @@
-*.b4j linguist-language=B4X
-*.bas linguist-language=B4X
+*.b4j linguist-language=b4x
+*.bas linguist-language=b4x
 *.b4j linguist-detectable=true
 *.bas linguist-detectable=true
 *.sql linguist-detectable=true
