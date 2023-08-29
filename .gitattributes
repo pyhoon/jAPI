@@ -2,3 +2,4 @@
 *.bas linguist-language=B4X
 *.b4j linguist-detectable=true
 *.bas linguist-detectable=true
+*.sql linguist-detectable=true
